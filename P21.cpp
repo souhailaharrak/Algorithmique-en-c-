@@ -5,7 +5,7 @@ using namespace std;
 #include <cmath>
 
 
-float ReadCIRCONFÉRENCE() {
+float ReadCIRCONFÃ‰RENCE() {
     int l;
     cout << "enter rayon \n";
     cin >> l;
@@ -13,7 +13,7 @@ float ReadCIRCONFÉRENCE() {
     return l;
 }
 
-float  CricleAreaByCIRCONFÉRENCE(float l) {
+float  CricleAreaByCIRCONFÃ‰RENCE(float l) {
 
     const float pi = 3.14;
     float area = (pow(l, 2)) / (4 * pi);
@@ -23,14 +23,14 @@ float  CricleAreaByCIRCONFÉRENCE(float l) {
 
 void PrintResult(float area) {
 
-    cout << "  Triangle area : " << area;
+    cout << "  cricle area : " << area;
 }
 
 
 int main()
 {
 
-    PrintResult(CricleAreaByCIRCONFÉRENCE(ReadCIRCONFÉRENCE()));
+    PrintResult(CricleAreaByCIRCONFÃ‰RENCE(ReadCIRCONFÃ‰RENCE()));
 
     return 0;
 
