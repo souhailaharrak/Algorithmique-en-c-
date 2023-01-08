@@ -44,3 +44,58 @@ int main()
 
 
 }
+
+
+
+
+
+// methode 2
+
+int ReadNumber(){
+   int Number;
+      
+    do{
+        
+    cout<<"entre un number"<<endl;
+    cin>>Number;
+  
+         
+    }while( Number<0  );
+
+   return Number ;
+};
+ 
+ int ReadM(){
+     int M;
+       cout<<"entre M"<<endl;
+    cin>>M;
+    return M;
+ }
+ 
+ 
+ 
+int Power( int Number,int M){
+    
+   
+      if(M==0){
+          return 1;
+      }
+      
+      int p=1;
+      for(int i=1;i<=M;i++){
+          
+          p=p*Number;
+  
+      }
+      return p;
+} 
+ 
+ 
+ 
+int main()
+{   
+    
+cout<< Power(ReadNumber(),ReadM()) ;
+ 
+
+}
