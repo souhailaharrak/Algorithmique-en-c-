@@ -67,7 +67,7 @@ int ReadNumber(){
  
  int ReadM(){
      int M;
-       cout<<"entre M"<<endl;
+       cout<<"entre Power"<<endl;
     cin>>M;
     return M;
  }
