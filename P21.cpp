@@ -35,3 +35,68 @@ int main()
     return 0;
 
 }
+
+
+ //methode 2
+#include <cmath>
+enum PrimeNotPrime {
+    NotPrime,
+    prime
+
+};
+
+int  ReadNumbers(string message) {
+    int  Number;
+    do {
+
+        cout << message << endl;
+        cin >> Number;
+
+    } while (Number < 0);
+
+
+    return Number;
+}
+
+
+PrimeNotPrime checkPrime(int Number){
+ 
+  int M=round(Number/2);
+  
+  for(int counter=2;counter<=M;counter++){
+      if(Number % counter==0){
+          
+          return PrimeNotPrime::NotPrime;
+          
+      } 
+         
+          return PrimeNotPrime::prime;
+       
+  }
+ 
+    
+}
+
+
+ 
+
+void Print(int Number) {
+
+    switch (checkPrime(Number)){
+        
+        case PrimeNotPrime::prime:
+           cout << "prime \n";
+           break;
+            case PrimeNotPrime::NotPrime:
+            cout << "NotPrime\n";
+           break;
+            
+    }
+ 
+
+
+}
+
+int main() {
+    Print( (ReadNumbers("entre un number")));
+}
